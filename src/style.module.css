@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: font;
+}
+button {
+    cursor: pointer;
+}
+.App {
+    background-color: bisque;
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+    padding-top: 0;
+    border-radius: 20px;
+}
+.Form {
+    display: none;
+}
+.Form.active {
+    display: block;
+    width: fit-content;
+    margin: auto;
+}
+.Form.active input {
+    width: 500px;
+    height: 45px;
+    font-size: 45px;
+    padding: 10px;
+    margin-top: 20px;
+}
+.Form.active button {
+    width: 525px;
+    font-size: 45px;
+    padding: 10px;
+    margin-top: 20px;
+}
+.Main {
+    display: none;
+}
+.Main.active {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30px;
+}
+.Header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 30px;
+    background-color: rgb(201, 168, 128);
+    border-radius: 20px;
+    padding: 10px;
+}
+.Header button {
+    background-color: bisque;
+    border: none;
+    font-size: 30px;
+    background-color: rgb(201, 168, 128);
+}
+.MenuWelcome {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 50px;
+    width: 90%;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+}
+.MenuFeatures {
+    width: 90%;
+    margin: auto;
+    padding: 30px;
+}
+.MenuFeatures h1 {
+    width: fit-content;
+    margin: auto;
+    font-size: 60px;
+}
+.MenuFeatures ul {
+    width: fit-content;
+    margin: auto;
+    font-size: 40px;
+    list-style: none;
+}
+.MenuFeatures li {
+    margin-top: 10px;
+}
+.MenuFeatures li::before {
+    content: '\27A4';
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+@font-face {
+    font-family: font;
+    src: url(font.ttf);
+}
